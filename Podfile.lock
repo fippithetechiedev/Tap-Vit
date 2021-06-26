@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.3)
+  - lottie-ios (2.5.0)
+  - SwiftSoup (1.7.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - SwiftSoup
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - lottie-ios
+    - SwiftSoup
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  SwiftSoup: e5f61d37e3d802a4b5db81b4945de3da9bfdf115
+
+PODFILE CHECKSUM: 20eb0ebe4979ea47dedc9643aa7dd61a37efe7b5
+
+COCOAPODS: 1.5.3

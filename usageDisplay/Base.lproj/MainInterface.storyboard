@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="usageDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hi9-d6-AC1" customClass="card" customModule="Tap">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XOg-nT-jsd">
+                                        <rect key="frame" x="9.5" y="55" width="301" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="widgetStuff" translatesAutoresizingMaskIntoConstraints="NO" id="iuO-31-hPM">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="JDa-s5-Jnn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppd-9c-yTM">
+                                                <rect key="frame" x="38" y="0.0" width="263" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="263" id="RU6-hh-rJe"/>
+                                                    <constraint firstAttribute="height" constant="35" id="ghT-EI-Pvv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U  S  A  G  E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-fu-ii0">
+                                        <rect key="frame" x="10" y="27" width="141" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="141" id="CEY-9E-gU9"/>
+                                            <constraint firstAttribute="height" constant="13" id="rIQ-wy-5Kf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dKe-fu-ii0" firstAttribute="leading" secondItem="hi9-d6-AC1" secondAttribute="leading" constant="10" id="22l-Xd-zyp"/>
+                                    <constraint firstItem="XOg-nT-jsd" firstAttribute="top" secondItem="dKe-fu-ii0" secondAttribute="bottom" constant="15" id="DAN-h9-Uim"/>
+                                    <constraint firstItem="XOg-nT-jsd" firstAttribute="centerX" secondItem="hi9-d6-AC1" secondAttribute="centerX" id="QPX-Cj-gdE"/>
+                                    <constraint firstItem="dKe-fu-ii0" firstAttribute="top" secondItem="hi9-d6-AC1" secondAttribute="top" constant="27" id="bp1-bc-uDf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="3jz-to-WH9"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="7PR-aM-CwS"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="Xh9-01-Z63"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="dkV-c9-Tyu"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="ex5-Jd-2uC"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="hUC-IM-Qv0"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="sZZ-i4-xU5"/>
+                            <constraint firstItem="hi9-d6-AC1" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="ty2-5Z-kxj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="120"/>
+                    <connections>
+                        <outlet property="usageValue" destination="ppd-9c-yTM" id="x8T-7M-myS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="133.13343328335833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="widgetStuff" width="75" height="75"/>
+    </resources>
+</document>
